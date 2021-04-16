@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/React.js-Advanced-Hooks-and-Redux/static/css/main.dd058065.chunk.css",
+    "main.js": "/React.js-Advanced-Hooks-and-Redux/static/js/main.f7cf223f.chunk.js",
+    "main.js.map": "/React.js-Advanced-Hooks-and-Redux/static/js/main.f7cf223f.chunk.js.map",
+    "runtime-main.js": "/React.js-Advanced-Hooks-and-Redux/static/js/runtime-main.5000cae2.js",
+    "runtime-main.js.map": "/React.js-Advanced-Hooks-and-Redux/static/js/runtime-main.5000cae2.js.map",
+    "static/css/2.fe359a49.chunk.css": "/React.js-Advanced-Hooks-and-Redux/static/css/2.fe359a49.chunk.css",
+    "static/js/2.8eb7bed4.chunk.js": "/React.js-Advanced-Hooks-and-Redux/static/js/2.8eb7bed4.chunk.js",
+    "static/js/2.8eb7bed4.chunk.js.map": "/React.js-Advanced-Hooks-and-Redux/static/js/2.8eb7bed4.chunk.js.map",
+    "static/js/3.a1796986.chunk.js": "/React.js-Advanced-Hooks-and-Redux/static/js/3.a1796986.chunk.js",
+    "static/js/3.a1796986.chunk.js.map": "/React.js-Advanced-Hooks-and-Redux/static/js/3.a1796986.chunk.js.map",
+    "index.html": "/React.js-Advanced-Hooks-and-Redux/index.html",
+    "static/css/2.fe359a49.chunk.css.map": "/React.js-Advanced-Hooks-and-Redux/static/css/2.fe359a49.chunk.css.map",
+    "static/css/main.dd058065.chunk.css.map": "/React.js-Advanced-Hooks-and-Redux/static/css/main.dd058065.chunk.css.map",
+    "static/js/2.8eb7bed4.chunk.js.LICENSE.txt": "/React.js-Advanced-Hooks-and-Redux/static/js/2.8eb7bed4.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/React.js-Advanced-Hooks-and-Redux/static/media/SEGA.47b4bfa9.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5000cae2.js",
+    "static/css/2.fe359a49.chunk.css",
+    "static/js/2.8eb7bed4.chunk.js",
+    "static/css/main.dd058065.chunk.css",
+    "static/js/main.f7cf223f.chunk.js"
+  ]
+}
