@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Scroll from './Scroll'
 import CardList from './CardList';
 import SearchBox from './SearchBox'
+import ErrorBoundary from './ErrorBoundary'
 import '../assets/App.css';
 
 // the virtual DOM is just a javascript object that collects the state
@@ -42,7 +43,9 @@ class App extends Component {
         {/* Since App is an object, we need to reference functions and properties as the keyword this */}
         <SearchBox searchChange={ this.onSearchChange }/>
         <Scroll>
-          <CardList robots={ filteredRobots } />
+          <ErrorBoundary>
+            <CardList robots={ filteredRobots } />
+          </ErrorBoundary>
         </Scroll>
       </div>
     );
