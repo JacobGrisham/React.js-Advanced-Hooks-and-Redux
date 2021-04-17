@@ -1,11 +1,11 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import Card from './Card';
+import '../assets/CardList.css';
 
 function CardList({ robots }) {
 
   return (
-    // Using Fragment to avoid unneccssary nesting of the DOM
-    <Fragment>
+    <div className='Card-list'>
       {
         // Using the ES6 map function to iterate over the robots object
         // map has two parameters, the object name and the index
@@ -23,7 +23,7 @@ function CardList({ robots }) {
           );
         })
       }
-    </Fragment>
+    </div>
   );
 }
 
