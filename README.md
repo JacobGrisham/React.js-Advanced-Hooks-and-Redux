@@ -10,8 +10,6 @@
 - React Error Boundary
 - React Hooks
 - React component nesting
-- React with Redux
-- Progressive Web Application (PWA)
 - High Level Overview of React: Virtual DOM, why it's useful, ...
 
 ## 🚀 Getting Started
