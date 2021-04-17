@@ -1,13 +1,30 @@
+// React
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/index.css';
-import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+// Redux
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
+import { searchRobots, requestUsers } from './reducers/reducers';
+// Redux Middleware
+import { createLogger } from 'redux-logger';
+import thunkMiddleware from 'redux-thunk';
+// Components
+import App from './components/App';
+// Styling
+import './assets/index.css';
 import 'tachyons';
+
+const logger = createLogger();
+
+const rootRedcuer = combineReducers({ searchRobots, requestUsers });
+const store = createStore(rootRedcuer, applyMiddleware(thunkMiddleware, logger));
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
