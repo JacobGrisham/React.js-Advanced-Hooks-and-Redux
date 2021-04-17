@@ -1,4 +1,6 @@
+// React
 import React, { useState, useEffect } from 'react';
+// Icons
 import FavoriteBorderRoundedIcon from '@material-ui/icons/FavoriteBorderRounded';
 import FavoriteRoundedIcon from '@material-ui/icons/FavoriteRounded';
 
@@ -6,12 +8,15 @@ import FavoriteRoundedIcon from '@material-ui/icons/FavoriteRounded';
 // These properties, or props, were passed down from the parent component
 function Card({ id, name, email }) {
 
+  // Creating state with React Hooks
   const [favorite, setFavorite] = useState(false);
 
+  // Setting state with React Hooks
   const onClickFavorite = () => {
     setFavorite(true)
   }
 
+  // Telling React when to update state with React Hooks
   useEffect(() => {
     console.log(favorite);
     // The second argument tells useEffect what to listen for to trigger an update

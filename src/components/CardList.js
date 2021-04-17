@@ -1,5 +1,8 @@
+// React
 import React from 'react';
+// Components
 import Card from './Card';
+// Stylesheets
 import '../assets/CardList.css';
 
 function CardList({ robots }) {
