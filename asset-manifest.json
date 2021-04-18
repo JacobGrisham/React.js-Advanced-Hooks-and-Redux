@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/React.js-Advanced-Hooks-and-Redux/static/css/main.0fe5d359.chunk.css",
-    "main.js": "/React.js-Advanced-Hooks-and-Redux/static/js/main.deb0b7c5.chunk.js",
-    "main.js.map": "/React.js-Advanced-Hooks-and-Redux/static/js/main.deb0b7c5.chunk.js.map",
-    "runtime-main.js": "/React.js-Advanced-Hooks-and-Redux/static/js/runtime-main.c905a215.js",
-    "runtime-main.js.map": "/React.js-Advanced-Hooks-and-Redux/static/js/runtime-main.c905a215.js.map",
+    "main.css": "/React.js-Advanced-Hooks-and-Redux/static/css/main.c9380396.chunk.css",
+    "main.js": "/React.js-Advanced-Hooks-and-Redux/static/js/main.6df68546.chunk.js",
+    "main.js.map": "/React.js-Advanced-Hooks-and-Redux/static/js/main.6df68546.chunk.js.map",
+    "runtime-main.js": "/React.js-Advanced-Hooks-and-Redux/static/js/runtime-main.e88b1c16.js",
+    "runtime-main.js.map": "/React.js-Advanced-Hooks-and-Redux/static/js/runtime-main.e88b1c16.js.map",
     "static/css/2.fe359a49.chunk.css": "/React.js-Advanced-Hooks-and-Redux/static/css/2.fe359a49.chunk.css",
-    "static/js/2.be1efdd4.chunk.js": "/React.js-Advanced-Hooks-and-Redux/static/js/2.be1efdd4.chunk.js",
-    "static/js/2.be1efdd4.chunk.js.map": "/React.js-Advanced-Hooks-and-Redux/static/js/2.be1efdd4.chunk.js.map",
-    "static/js/3.04856ffb.chunk.js": "/React.js-Advanced-Hooks-and-Redux/static/js/3.04856ffb.chunk.js",
-    "static/js/3.04856ffb.chunk.js.map": "/React.js-Advanced-Hooks-and-Redux/static/js/3.04856ffb.chunk.js.map",
+    "static/js/2.02405491.chunk.js": "/React.js-Advanced-Hooks-and-Redux/static/js/2.02405491.chunk.js",
+    "static/js/2.02405491.chunk.js.map": "/React.js-Advanced-Hooks-and-Redux/static/js/2.02405491.chunk.js.map",
+    "static/js/3.e64447b4.chunk.js": "/React.js-Advanced-Hooks-and-Redux/static/js/3.e64447b4.chunk.js",
+    "static/js/3.e64447b4.chunk.js.map": "/React.js-Advanced-Hooks-and-Redux/static/js/3.e64447b4.chunk.js.map",
     "index.html": "/React.js-Advanced-Hooks-and-Redux/index.html",
     "static/css/2.fe359a49.chunk.css.map": "/React.js-Advanced-Hooks-and-Redux/static/css/2.fe359a49.chunk.css.map",
-    "static/css/main.0fe5d359.chunk.css.map": "/React.js-Advanced-Hooks-and-Redux/static/css/main.0fe5d359.chunk.css.map",
-    "static/js/2.be1efdd4.chunk.js.LICENSE.txt": "/React.js-Advanced-Hooks-and-Redux/static/js/2.be1efdd4.chunk.js.LICENSE.txt",
+    "static/css/main.c9380396.chunk.css.map": "/React.js-Advanced-Hooks-and-Redux/static/css/main.c9380396.chunk.css.map",
+    "static/js/2.02405491.chunk.js.LICENSE.txt": "/React.js-Advanced-Hooks-and-Redux/static/js/2.02405491.chunk.js.LICENSE.txt",
     "static/media/App.css": "/React.js-Advanced-Hooks-and-Redux/static/media/SEGA.47b4bfa9.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.c905a215.js",
+    "static/js/runtime-main.e88b1c16.js",
     "static/css/2.fe359a49.chunk.css",
-    "static/js/2.be1efdd4.chunk.js",
-    "static/css/main.0fe5d359.chunk.css",
-    "static/js/main.deb0b7c5.chunk.js"
+    "static/js/2.02405491.chunk.js",
+    "static/css/main.c9380396.chunk.css",
+    "static/js/main.6df68546.chunk.js"
   ]
 }
