@@ -7,8 +7,7 @@
 - ES6 `map`
 - Javascript Deconstructering
 - React `Fragment`
-- React Error Boundary
-- React styling with tachyons
+- React `ErrorBoundary`
 - React component nesting
 - React folder organization
 - Smart component (manages state) vs basic component
@@ -17,6 +16,13 @@
 - Redux `connect` vs `useSelector` and `useDispatch`
 - Redux middleware such as async actions using `redux-thunk` and logging using `redux-logger`
 - Redux folder organization
+- Website performance optimization using [WebPageTest](https://www.webpagetest.org/)
+- React performance optimization using `React.memo`, `PureComponent`, and `shouldComponentUpdate`
+- React debugging and performance optimization using Chrome Dev Tools Performace tab and React Developer Tools
+- Progressive Web Applications (PWA)
+- [Emotion](https://emotion.sh/docs/introduction) for styling components
+
+## 🤔Senior Software Engineer Considerations
 - Why Use React, What Came Before It?:
   - Precursor was jQuery, which uses imperative programming.
   - The problem with jQuery is that tracking and managing DOM changes were difficult, causing development slowdown when apps grow.
@@ -42,6 +48,11 @@
   - jQuery was 1 Action ==> 1 Change in the DOM
   - Redux uses the Flux Pattern: Action --> Dispatcher --> Store --> View
   - Before the Flux Pattern was Model View Controller (MVC): Action --> Controller --> Many Models --> Many Views
+- Performance Optimization
+  - Front-end
+    - Critical Render Path: use code splitting and avoid over-use of animations
+    - Optimized Code: optimize for 'time to first meaningful paint' and 'time to interactive'
+    - Progressive Web App
 
 ## 🚀 Getting Started
 
