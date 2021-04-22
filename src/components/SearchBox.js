@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 function SearchBox({ searchfield, searchChange }) {
   return (
@@ -13,4 +13,5 @@ function SearchBox({ searchfield, searchChange }) {
   )
 }
 
-export default SearchBox;
+// Prevent re-rendering of Searchbox using React.memo when there are no changes
+export default memo(SearchBox);
