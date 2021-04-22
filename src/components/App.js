@@ -1,15 +1,18 @@
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+// Had to debug standard import statement. See https://github.com/emotion-js/emotion/issues/2041#issuecomment-708263981
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react'
 // React
 import React, { useEffect } from 'react';
 // Redux
 import { connect } from 'react-redux';
 import { setSearchfield, requestUsers } from '../actions/actions';
 // Components
-import Scroll from './Scroll'
+import Header from './Header';
+import Scroll from './Scroll';
 import CardList from './CardList';
-import SearchBox from './SearchBox'
-// Stylesheets
-import ErrorBoundary from './ErrorBoundary'
-import '../assets/App.css';
+import SearchBox from './SearchBox';
+import ErrorBoundary from './ErrorBoundary';
 
 // Redux connect() parameter definitions
 const mapStateToProps = state => {
@@ -29,6 +32,10 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
+const center = css`
+  text-align: center;
+`
+
 // the virtual DOM is just a javascript object that collects the state
 // React then passes the state to child components as props
 function App(props) {
@@ -45,9 +52,9 @@ function App(props) {
     return robot.name.toLowerCase().includes(searchField.toLowerCase());
   })
   
-  return isPending ? <h1 className='tc'>Loading...</h1> : (
-    <div className='tc'>
-      <h1 className='f1'>RoboFriends</h1>
+  return isPending ? <h1 css={center}>Loading...</h1> : (
+    <div css={center}>
+      <Header />
       {/* Since App is an object, we need to reference functions and properties as the keyword this */}
       <SearchBox searchChange={ onSearchChange }/>
       <Scroll>
