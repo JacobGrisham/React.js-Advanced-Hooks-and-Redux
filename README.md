@@ -6,6 +6,7 @@
 ## 💡Lessons Learned
 - ES6 `map`
 - Javascript Deconstructering
+- Higher order functions
 - React `Fragment`
 - React `ErrorBoundary`
 - React component nesting
@@ -19,8 +20,10 @@
 - Website performance optimization using [WebPageTest](https://www.webpagetest.org/)
 - React performance optimization using `React.memo`, `PureComponent`, and `shouldComponentUpdate`
 - React debugging and performance optimization using Chrome Dev Tools Performace tab and React Developer Tools
-- Progressive Web Applications (PWA)
+- Route-based code splitting with `React.lazy()`
+- Component-based code splitting with `react-loadable`
 - [Emotion](https://emotion.sh/docs/introduction) for styling components
+- Progressive Web Applications (PWA)
 
 ## 🤔Senior Software Engineer Considerations
 - Why Use React, What Came Before It?:
@@ -43,16 +46,22 @@
     - Single source of truth. Centralized place to manage state for entire application.
     - State is read-only/immutable. Prevent unexpected errors.
     - Changes are made using pure functions. More predictable input/output relationship
-- What is Redux, What Came Before It??:
+- What is Redux, What Came Before It?:
   - 100's of Actions ==(middleware)==> 1 Reducer ====> 1 Store ==(React)==> Make Changes to DOM
   - jQuery was 1 Action ==> 1 Change in the DOM
   - Redux uses the Flux Pattern: Action --> Dispatcher --> Store --> View
   - Before the Flux Pattern was Model View Controller (MVC): Action --> Controller --> Many Models --> Many Views
 - Performance Optimization
   - Front-end
-    - Critical Render Path: use code splitting and avoid over-use of animations
+    - Critical Render Path: use code splitting to stagger the timing that the files are sent to the client so as to reduce the initial loading time
     - Optimized Code: optimize for 'time to first meaningful paint' and 'time to interactive'
     - Progressive Web App
+- What are Progressive Web Applications (PWA), and Why Use It?
+  - PWA's use registered service workers as network proxies, intercepting calls to network to determine if a call the call can be satisfied with the Cache Storage API
+  - Optimize performance
+  - Enable limited offline availability and interaction
+  - Support similar native experiences on mobile and desktop
+
 
 ## 🚀 Getting Started
 
