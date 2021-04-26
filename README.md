@@ -1,4 +1,7 @@
 # [Robofriends App: React.js Advanced Hooks and Redux](https://jacobgrisham.github.io/React.js-Advanced-Hooks-and-Redux/)
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://jacobgrisham.github.io/React.js-Advanced-Hooks-and-Redux/)
+[![CircleCI](https://img.shields.io/circleci/build/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)](https://app.circleci.com/pipelines/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)
+![David](https://img.shields.io/david/jacobgrisham/React.js-Advanced-Hooks-and-Redux)
 ### Coding project from the Udemy Course [The Complete Junior to Senior Web Developer Roadmap](https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/)
 
 ![Demo](public/demo.gif)
@@ -56,7 +59,7 @@
     - Critical Render Path: use code splitting to stagger the timing that the files are sent to the client so as to reduce the initial loading time
     - Optimized Code: optimize for 'time to first meaningful paint' and 'time to interactive'
     - Progressive Web App
-- What are Progressive Web Applications (PWA), and Why Use It?
+- How do Progressive Web Applications (PWA) Work, and Why Use It?
   - PWA's use registered service workers as network proxies, intercepting calls to network to determine if a call the call can be satisfied with the Cache Storage API
   - Optimize performance
   - Enable limited offline availability and interaction
@@ -73,4 +76,4 @@ $ npm start
 ```
 
 ## 📣 Reference
-- Section 4: React + Redux + Module Bundling of the Udemy Course [The Complete Junior to Senior Web Developer Roadmap](https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/)
+- Section 4: React + Redux + Module Bundling and Section 5: Performance Part 2 of the Udemy Course [The Complete Junior to Senior Web Developer Roadmap](https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/)
