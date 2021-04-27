@@ -2,6 +2,7 @@
 // Had to debug standard import statement. See https://github.com/emotion-js/emotion/issues/2041#issuecomment-708263981
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
+import '../assets/styles/App.css';
 // React
 import React, { useEffect } from 'react';
 // Redux
@@ -52,7 +53,7 @@ function App(props) {
     return robot.name.toLowerCase().includes(searchField.toLowerCase());
   })
   
-  return isPending ? <h1 css={center}>Loading...</h1> : (
+  return isPending ? <h1 css={center} className='sega-font'>Loading...</h1> : (
     <div css={center}>
       <Header />
       {/* Since App is an object, we need to reference functions and properties as the keyword this */}

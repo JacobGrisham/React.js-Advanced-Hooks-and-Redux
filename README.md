@@ -7,7 +7,7 @@
 
 ![Demo](public/demo.gif)
 
-## 💡Lessons Learned
+## 💡 Lessons Learned
 - ES6 `map`
 - Javascript Deconstructering
 - Higher order functions
@@ -29,7 +29,7 @@
 - [Emotion](https://emotion.sh/docs/introduction) for styling components
 - Progressive Web Applications (PWA)
 
-## 🤔Senior Software Engineer Considerations
+## 🤔 Senior Software Engineer Considerations
 - Why Use React, What Came Before It?:
   - Precursor was jQuery, which uses imperative programming.
   - The problem with jQuery is that tracking and managing DOM changes were difficult, causing development slowdown when apps grow.

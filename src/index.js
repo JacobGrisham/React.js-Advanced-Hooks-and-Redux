@@ -13,7 +13,7 @@ import thunkMiddleware from 'redux-thunk';
 // Components
 import App from './components/App';
 // Styling
-import './assets/index.css';
+import './assets/styles/index.css';
 import 'tachyons';
 
 const logger = createLogger();

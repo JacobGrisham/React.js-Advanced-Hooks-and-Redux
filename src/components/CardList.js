@@ -1,14 +1,21 @@
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+// Had to debug standard import statement. See https://github.com/emotion-js/emotion/issues/2041#issuecomment-708263981
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 // React
 import React from 'react';
 // Components
 import Card from './Card';
-// Stylesheets
-import '../assets/CardList.css';
+
+const cardListBackground = css `
+  background-color: #000000;
+  background-image: url('https://www.transparenttextures.com/patterns/escheresque-dark.png');
+`
 
 function CardList({ robots }) {
 
   return (
-    <div className='Card-list'>
+    <div css={cardListBackground}>
       {
         // Using the ES6 map function to iterate over the robots object
         // map has two parameters, the object name and the index
