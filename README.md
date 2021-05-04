@@ -30,7 +30,7 @@
 - Progressive Web Applications (PWA)
 
 ## 🤔 Senior Software Engineer Considerations
-- **Why Use React, What Came Before It?:**
+- ### Why Use React, What Came Before It?:
   - Precursor was jQuery, which uses imperative programming.
   - The problem with jQuery is that tracking and managing DOM changes were difficult, causing development slowdown when apps grow.
   - React is the solution for the view layer (web, mobile, desktop, VR, etc.).
@@ -39,38 +39,37 @@
   - React employs the Virtual DOM: "React bot" creates javascript object and automatically makes efficient changes to the DOM based on our inputs. This increases the performance of the web page and decreases bugs.
   - Analogy: We are no longer the painter holding the brush, we are now the artist directing the machine. More specifically, no more `querySelectorAll`, `getElementById`, and creating numerous event handlers.
   - React has a strong ecosystem and developer community.
-- **Why use React Hooks, What Came Before It?:**
+- ### Why use React Hooks, What Came Before It?:
   - Stateful logic was bolted onto to the component. There was no way to (unscrew) abstract it and re-use it other components.
   - Lifecycle hooks within a component can grow to become unwieldy
   - Classes can increase the mental complexity since you have to track `this`, `this.state`
-- **Why use Redux?:**
+- ### Why use Redux?:
   - Share data between containers more easily. In React, you have to move the state up one layer to share data between/among components.
   - Manage large applications with complex state. React was built to manage the view, Redux was built to manage state.
   - Predictable state management using 3 principles:
     - Single source of truth. Centralized place to manage state for entire application.
     - State is read-only/immutable. Prevent unexpected errors.
     - Changes are made using pure functions. More predictable input/output relationship
-- **What is Redux, What Came Before It?:**
+- ### What is Redux, What Came Before It?:
   - 100's of Actions ==(middleware)==> 1 Reducer ====> 1 Store ==(React)==> Make Changes to DOM
   - jQuery was 1 Action ==> 1 Change in the DOM
   - Redux uses the Flux Pattern: Action --> Dispatcher --> Store --> View
   - Before the Flux Pattern was Model View Controller (MVC): Action --> Controller --> Many Models --> Many Views
-- **Performance Optimization**
+- ### Performance Optimization
   - Front-end
     - Critical Render Path: use code splitting to stagger the timing that the files are sent to the client so as to reduce the initial loading time
     - Optimized Code: optimize for 'time to first meaningful paint' and 'time to interactive'
     - Progressive Web App
-- **How do Progressive Web Applications (PWA) Work, and Why Use It?**
+- ### How do Progressive Web Applications (PWA) Work, and Why Use It?
   - PWA's use registered service workers as network proxies, intercepting calls to network to determine if a call the call can be satisfied with the Cache Storage API
   - Optimize performance
   - Enable limited offline availability and interaction
   - Support similar native experiences on mobile and desktop
 
-
 ## 🚀 Getting Started
 
 To run this project locally:
-- In your terminal, navigate to the root folder and run the following commands
+In your terminal, navigate to the root folder and run the following commands
 ```
 $ npm install
 $ npm start
