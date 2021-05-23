@@ -5,7 +5,7 @@
 [![gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.dev)
 ### Coding project from the Udemy Course [The Complete Junior to Senior Web Developer Roadmap](https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/)
 
-![Demo](public/demo.gif)
+![Demo](img/demo.gif)
 
 ## 💡 Lessons Learned
 - ES6 `map`
@@ -28,9 +28,11 @@
 - Component-based code splitting with `react-loadable`
 - [Emotion](https://emotion.sh/docs/introduction) for styling components
 - Progressive Web Applications (PWA)
+- Typescript
+- Dynamic vs Static Typing and Weakly vs Strongly Typed
 
 ## 🤔 Senior Software Engineer Considerations
-- ### Why Use React, What Came Before It?:
+- ### Why Use React, What Came Before It?
   - Precursor was jQuery, which uses imperative programming.
   - The problem with jQuery is that tracking and managing DOM changes were difficult, causing development slowdown when apps grow.
   - React is the solution for the view layer (web, mobile, desktop, VR, etc.).
@@ -39,18 +41,18 @@
   - React employs the Virtual DOM: "React bot" creates javascript object and automatically makes efficient changes to the DOM based on our inputs. This increases the performance of the web page and decreases bugs.
   - Analogy: We are no longer the painter holding the brush, we are now the artist directing the machine. More specifically, no more `querySelectorAll`, `getElementById`, and creating numerous event handlers.
   - React has a strong ecosystem and developer community.
-- ### Why use React Hooks, What Came Before It?:
+- ### Why use React Hooks, What Came Before It?
   - Stateful logic was bolted onto to the component. There was no way to (unscrew) abstract it and re-use it other components.
   - Lifecycle hooks within a component can grow to become unwieldy
   - Classes can increase the mental complexity since you have to track `this`, `this.state`
-- ### Why use Redux?:
+- ### Why use Redux?
   - Share data between containers more easily. In React, you have to move the state up one layer to share data between/among components.
   - Manage large applications with complex state. React was built to manage the view, Redux was built to manage state.
   - Predictable state management using 3 principles:
     - Single source of truth. Centralized place to manage state for entire application.
     - State is read-only/immutable. Prevent unexpected errors.
     - Changes are made using pure functions. More predictable input/output relationship
-- ### What is Redux, What Came Before It?:
+- ### What is Redux, What Came Before It?
   - 100's of Actions ==(middleware)==> 1 Reducer ====> 1 Store ==(React)==> Make Changes to DOM
   - jQuery was 1 Action ==> 1 Change in the DOM
   - Redux uses the Flux Pattern: Action --> Dispatcher --> Store --> View
@@ -65,6 +67,24 @@
   - Optimize performance
   - Enable limited offline availability and interaction
   - Support similar native experiences on mobile and desktop
+
+- ### Dynamic vs Static Typing, and What are their Strengths?
+  - Static Typing requires declaring the 'type' of the variable explicitly (i.e. `int`, `float`, `char`, etc.)
+  - Statically typed languages are self documenting, which helps avoid developer errors of using the wrong type. Statically typed languages are also self-testing, in that type errors surface during compilation instead of testing or in production
+  - Dynamic Typing is not bound to a 'type'. Type checking is completed during runtime
+  - Dynamically typed languages have a quicker developer learning curve, minimize code compliexity, and potentially allow for faster development
+
+- ### Weakly Typed vs Strongly Typed, and What are their Strengths?
+  - Weakly typed languages allow for more flexibility in interpreting types (i.e. type coercion, such as the concatenation of an integer and a string)
+  - Strongly typed languages requires types to be compatible
+
+- ### The Language Quadrant
+  - ![Language Quadrant](img/language-quadrant.png)
+
+- ### What is Typescript and Why Use It?
+  - [Typescript](https://www.typescriptlang.org/) is a superset of Javascript that makes Javascript evolve from a weakly typed, dynamic language to a strongly typed, static language.
+  - The ideal environment to use Typescript has the following characteristics: desire for less bugs in production, desire for code to be self-documenting, have budget to train developers to use it, and can afford a slower development cycle.
+  - There are a few alternatives for Javascript that are similar to Typescript: [flow](https://flow.org/), [Reason](https://reasonml.github.io/), and [elm](https://elm-lang.org/). However, the developer community is currently leaning towards Typescript. [As of 2020](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages-wanted), Typescript is the second most loved language, and the fourth most wanted.
 
 ## 🚀 Getting Started
 
