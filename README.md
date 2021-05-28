@@ -3,7 +3,7 @@
 [![CircleCI](https://img.shields.io/circleci/build/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)](https://app.circleci.com/pipelines/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)
 ![David](https://img.shields.io/david/jacobgrisham/React.js-Advanced-Hooks-and-Redux)
 [![gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.dev)
-### Coding project from the Udemy Course [The Complete Junior to Senior Web Developer Roadmap](https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/)
+## Coding project from the Udemy Course [The Complete Junior to Senior Web Developer Roadmap](https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/)
 
 ![Demo](img/demo.gif)
 
@@ -28,8 +28,11 @@
 - Component-based code splitting with `react-loadable`
 - [Emotion](https://emotion.sh/docs/introduction) for styling components
 - Progressive Web Applications (PWA)
-- Typescript
 - Dynamic vs Static Typing and Weakly vs Strongly Typed
+- Typescript commands `tsc name_of_file.ts` to run the Typescript compiler on the specified file, `tsc --init` to generate tsconfig.json file, and `tsc name_of_file.ts --watch` to enable hot-reloading for the specified file
+- Typescript types: boolean, number, string, array, objects, null, undefined, tuple, enum, any, void, never, interface, function, classes, and union
+- Refactoring applications with Typescript and using [DefinitelyTyped](https://definitelytyped.org/) to install the correct dependencies
+- Refactoring Typescript into a Progressive Web Application that uses React and Redux
 
 ## 🤔 Senior Software Engineer Considerations
 - ### Why Use React, What Came Before It?
@@ -82,7 +85,7 @@
   - ![Language Quadrant](img/language-quadrant.png)
 
 - ### What is Typescript and Why Use It?
-  - [Typescript](https://www.typescriptlang.org/) is a superset of Javascript that makes Javascript evolve from a weakly typed, dynamic language to a strongly typed, static language.
+  - [Typescript](https://www.typescriptlang.org/) is a superset of Javascript that makes Javascript evolve from a weakly typed, dynamic language to a strongly typed, static language. A superset means that the new language is a layer around the older language, giving you more methods and rules.
   - The ideal environment to use Typescript has the following characteristics: desire for less bugs in production, desire for code to be self-documenting, have budget to train developers to use it, and can afford a slower development cycle.
   - There are a few alternatives for Javascript that are similar to Typescript: [flow](https://flow.org/), [Reason](https://reasonml.github.io/), and [elm](https://elm-lang.org/). However, the developer community is currently leaning towards Typescript. [As of 2020](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages-wanted), Typescript is the second most loved language, and the fourth most wanted.
 
