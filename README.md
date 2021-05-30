@@ -61,11 +61,10 @@
   - jQuery was 1 Action ==> 1 Change in the DOM
   - Redux uses the Flux Pattern: Action --> Dispatcher --> Store --> View
   - Before the Flux Pattern was Model View Controller (MVC): Action --> Controller --> Many Models --> Many Views
-### Performance Optimization
-  - Front-end
-    - Critical Render Path: use code splitting to stagger the timing that the files are sent to the client so as to reduce the initial loading time
-    - Optimized Code: optimize for 'time to first meaningful paint' and 'time to interactive'
-    - Progressive Web App
+### Performance Optimization (Front-end)
+  - Critical Render Path: use code splitting to stagger the timing that the files are sent to the client so as to reduce the initial loading time
+  - Optimized Code: optimize for 'time to first meaningful paint' and 'time to interactive'
+  - Progressive Web App
 ### How do Progressive Web Applications (PWA) Work, and Why Use It?
   - PWA's use registered service workers as network proxies, intercepting calls to network to determine if a call the call can be satisfied with the Cache Storage API
   - Optimize performance
@@ -85,7 +84,7 @@
 ### The Language Quadrant
   - ![Language Quadrant](img/language-quadrant.png)
 
-- ### What is Typescript and Why Use It?
+### What is Typescript and Why Use It?
   - [Typescript](https://www.typescriptlang.org/) is a superset of Javascript that makes Javascript evolve from a weakly typed, dynamic language to a strongly typed, static language. A superset means that the new language is a layer around the older language, giving you more methods and rules.
   - The ideal environment to use Typescript has the following characteristics: desire for less bugs in production, desire for code to be self-documenting, have budget to train developers to use it, and can afford a slower development cycle.
   - There are a few alternatives for Javascript that are similar to Typescript: [flow](https://flow.org/), [Reason](https://reasonml.github.io/), and [elm](https://elm-lang.org/). However, the developer community is currently leaning towards Typescript. [As of 2020](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages-wanted), Typescript is the second most loved language, and the fourth most wanted.
@@ -93,14 +92,14 @@
 ### Unit Tests, Integration Tests, Automation Tests
   - **Unit Tests**: should cover all small, pure functions of an application. A pure function always has an input/outpu, doesn't affect another part of the program, and is deterministic (same input, same output). This is perhaps 90% of what you'll see. While building software, it's recommended to start here before moving on the other two test types.
   - **Integration Tests**: tests how different layers of the stack integrate or even how certain functions integrate with each other. Keep in mind that these tests are expensive in that they take a lot of energy think out, time to write, and may become obsolete when the code changes or a service is replaced. It's also hard to say when complete integration test coverage is achieved, since you can write near endless integration tests. You'll likely only see these tests in large companies with generous budgets and/or strong engineering teams.
-  - **Automation (UI) Tests**: tests how the webpage behaves, often in a controlled environment (i.e. device screen size, specific browser, and specific browser version number). These tests are the most expensive in terms of time and money. Therefore, you'll likely only see these tests in large companies with generous budgets. Furthermore, these tests are the most infrequent, occuring before a release into production, once per week, or some other schedule. Can be completed manually by people and/or programmatically with code.  
-  Options for the former include:  
-    - In-house testing
-    - Contractors
-    - Test company service provider  
-  Options for the latter include:  
-    - [webdriver](https://webdriver.io/): good documentation
-    - [testcafe](https://testcafe.io/): good starter, having all the tools in one (except cross-browser)
+  - **Automation (UI) Tests**: tests how the webpage behaves, often in a controlled environment (i.e. device screen size, specific browser, and specific browser version number). These tests are the most expensive in terms of time and money. Therefore, you'll likely only see these tests in large companies with generous budgets. Furthermore, these tests are the most infrequent, occuring before a release into production, once per week, or some other schedule. Can be completed manually by people and/or programmatically with code.
+    - Options for the former include:
+      - In-house testing
+      - Contractors
+      - Test company service provider
+    - Options for the latter include:
+      - [webdriver](https://webdriver.io/): good documentation
+      - [testcafe](https://testcafe.io/): good starter, having all the tools in one (except cross-browser)
   
 ### Testing Tools Matrix
 |Scaffolding|Assertion Library|Test Runner|Mock, Spies, Stubs|Code Coverage|
