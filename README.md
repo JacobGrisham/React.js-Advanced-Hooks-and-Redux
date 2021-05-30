@@ -33,6 +33,7 @@
 - Typescript types: boolean, number, string, array, objects, null, undefined, tuple, enum, any, void, never, interface, function, classes, and union
 - Refactoring applications with Typescript and using [DefinitelyTyped](https://definitelytyped.org/) to install the correct dependencies
 - Refactoring Typescript into a Progressive Web Application that uses React and Redux
+- Unit Tests, Integration Tests, Automation Tests
 
 ## 🤔 Senior Software Engineer Considerations
 - ### Why Use React, What Came Before It?
@@ -88,6 +89,32 @@
   - [Typescript](https://www.typescriptlang.org/) is a superset of Javascript that makes Javascript evolve from a weakly typed, dynamic language to a strongly typed, static language. A superset means that the new language is a layer around the older language, giving you more methods and rules.
   - The ideal environment to use Typescript has the following characteristics: desire for less bugs in production, desire for code to be self-documenting, have budget to train developers to use it, and can afford a slower development cycle.
   - There are a few alternatives for Javascript that are similar to Typescript: [flow](https://flow.org/), [Reason](https://reasonml.github.io/), and [elm](https://elm-lang.org/). However, the developer community is currently leaning towards Typescript. [As of 2020](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages-wanted), Typescript is the second most loved language, and the fourth most wanted.
+
+  - ### Unit Tests, Integration Tests, Automation Tests
+    - **Unit Tests**: should cover all small, pure functions of an application. A pure function always has an input/outpu, doesn't affect another part of the program, and is deterministic (same input, same output). This is perhaps 90% of what you'll see. While building software, it's recommended to start here before moving on the other two test types.
+    - **Integration Tests**: tests how different layers of the stack integrate or even how certain functions integrate with each other. Keep in mind that these tests are expensive in that they take a lot of energy think out, time to write, and may become obsolete when the code changes or a service is replaced. It's also hard to say when complete integration test coverage is achieved, since you can write near endless integration tests. You'll likely only see these tests in large companies with generous budgets and/or strong engineering teams.
+    - **Automation (UI) Tests**: tests how the webpage behaves, often in a controlled environment (i.e. device screen size, specific browser, and specific browser version number). These tests are the most expensive in terms of time and money. Therefore, you'll likely only see these tests in large companies with generous budgets. Furthermore, these tests are the most infrequent, occuring before a release into production, once per week, or some other schedule. Can be completed manually by people and/or programmatically with code.
+    Options for the former include:
+      - In-house testing
+      - Contractors
+      - Test company service provider
+    Options for the latter include:
+      - [webdriver](https://webdriver.io/): good documentation
+      - [testcafe](https://testcafe.io/): good starter, having all the tools in one (except cross-browser)
+  
+  - ### Testing Tools Matrix
+  |Scaffolding|Assertion Library|Test Runner|Mock, Spies, Stubs|Code Coverage|
+  |[jasmine](https://jasmine.github.io/)|jasmine|jasmine|jasmine|[istanbul](https://istanbul.js.org/)|
+  |[jest](https://jestjs.io/)|jest|jest|jest|jest|
+  |[mocha](https://mochajs.org/)|[chai](https://www.chaijs.com/)|mocha|[sinon](https://sinonjs.org/)|istanbul|
+  |.|.|[karma](https://karma-runner.github.io/latest/index.html)|.|.|
+    - **Mock**: fake a function or behavior, often used in integration tests
+    - **Stubbing**: replaces selected functions with another function to ensure that the expected behavior happens, for example: faking a server to test an API call
+    - **Spies**: provide information about functions (how many times they were called, in what cases, and by who)
+    - karma runs tests in the browser, which is inefficient. There are two alternatives:
+      - [Puppeteer](https://developers.google.com/web/tools/puppeteer), which is a headless browser, 
+      - [jsdom](https://github.com/jsdom/jsdom), which mocks the javascript portion of the browser
+    - React specific testing tools include jest snapshots and [Enzyme](https://enzymejs.github.io/enzyme/)
 
 ## 🚀 Getting Started
 
