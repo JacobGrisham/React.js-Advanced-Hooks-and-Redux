@@ -35,6 +35,7 @@
 - Refactoring applications with Typescript and using [DefinitelyTyped](https://definitelytyped.org/) to install the correct dependencies
 - Refactoring Typescript into a Progressive Web Application that uses React and Redux
 - Unit Tests, Integration Tests, Automation Tests
+- Testing behavior vs. implementation details
 
 ## 🤔 Senior Software Engineer Considerations
 ### Why Use React, What Came Before It?
@@ -115,8 +116,14 @@
   - karma runs tests in the browser, which is inefficient. There are two alternatives:
     - [Puppeteer](https://developers.google.com/web/tools/puppeteer), which is a headless browser, 
     - [jsdom](https://github.com/jsdom/jsdom), which mocks the javascript portion of the browser
-  - React specific testing tools include jest snapshots and [Enzyme](https://enzymejs.github.io/enzyme/)
-    - **jest snapshots**: allow for DRY code by not having to repeatedly check that stateless (simple) components render approved code.
+  - React specific testing tools include:
+    - [Enzyme](https://enzymejs.github.io/enzyme/). Jest snapshots allow for DRY code by not having to repeatedly check that stateless (simple) components render approved code. However, the usefullness and popularity for Enzyme is falling.
+    - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro). This library promotes testing of behavior rather than implementation details (unlike Enzyme).
+
+### Testing Philosophy and Methodology
+- Test behavior rather than implementation details to avoid false negatives and false positives when running tests. One major benefit of this methodology is that tests should remain valid even after a codebase refactor (no need to update tests when updating code).
+- "Automated tests should verify that the application code works for the production users." [Kent C. Dodds](https://kentcdodds.com/blog/testing-implementation-details). This philosphy clarifies the mission of testing in the first place. This mission statement also lends itself to the methodology of testing behavior rather than implementation details.
+- "Write Tests. Not too Many. Mostly Integration" [Guillermo Rauch](https://twitter.com/rauchg/status/807626710350839808?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E807626710350839808%7Ctwgr%5E%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fkentcdodds.com%2Fblog%2Fwrite-tests). Commentary and analysis by [Kent C. Dodds](https://kentcdodds.com/blog/write-tests). This pithy philosophy encourages developers **_not_** to skip writing tests, avoid diminishing returns of achieving 100% code coverage, and that integration tests give the most bang for your buck.
 
 ## 🚀 Getting Started
 
