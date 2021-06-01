@@ -116,6 +116,7 @@
     - [Puppeteer](https://developers.google.com/web/tools/puppeteer), which is a headless browser, 
     - [jsdom](https://github.com/jsdom/jsdom), which mocks the javascript portion of the browser
   - React specific testing tools include jest snapshots and [Enzyme](https://enzymejs.github.io/enzyme/)
+    - **jest snapshots**: allow for DRY code by not having to repeatedly check that stateless (simple) components render approved code.
 
 ## 🚀 Getting Started
 
