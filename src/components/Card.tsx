@@ -21,7 +21,6 @@ const Card: React.FunctionComponent<IRobot> = ({ id, name, email }) => {
 
   // Telling React when to update state with React Hooks
   useEffect(() => {
-    console.log(favorite);
     // The second argument tells useEffect what to listen for to trigger an update
     // Only run when favorite changes
   }, [favorite])
@@ -34,15 +33,15 @@ const Card: React.FunctionComponent<IRobot> = ({ id, name, email }) => {
 
   return(
     <div className='bg-gray dib br3 pa3 ma2 grow bw2 shadow-5 tc'>
-      <button onClick={ onClickFavorite } style={{ marginLeft: 'auto',  border: 'none', outline: 'none', backgroundColor: 'transparent'}}>
-        { favorite ? <FavoriteRoundedIcon style={{ color: 'red' }} /> : <FavoriteBorderRoundedIcon/>}
+      <button aria-label="Favorite/Unfavorite" onClick={ onClickFavorite } style={{ marginLeft: 'auto',  border: 'none', outline: 'none', backgroundColor: 'transparent'}}>
+        { favorite ? <FavoriteRoundedIcon aria-label="Favorite Icon" style={{ color: 'red' }} /> : <FavoriteBorderRoundedIcon aria-label="Favorite Icon"/>}
       </button>
       <img alt='robot' src={`https://robohash.org/${ id }?200x200`}></img>
       <div style={{ color: 'white' }}>
         <h2>{ name }</h2>
         <p>{ email }</p>
       </div>
-      <button onClick={ onClickDetails }>
+      <button aria-label="Expand" onClick={ onClickDetails }>
         <ExpandMoreIcon style={{ border: 'none', outline: 'none', backgroundColor: 'transparent'}}>
           <Suspense fallback={<div>Loading...</div>}>
             <DetailsLazy />
