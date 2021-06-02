@@ -1,4 +1,5 @@
 import { Dispatch } from 'redux';
+import { apiCall } from '../api/api';
 import { 
   CHANGE_SEARCHFIELD, 
   REQUEST_USERS_PENDING, 
@@ -12,10 +13,12 @@ export const setSearchfield = (text: string) => ({
 })
 
 // This is a higher order function: a function that returns a function
-export const requestUsers = () => (dispatch: Dispatch) => {
-  dispatch({ type: REQUEST_USERS_PENDING })
-  fetch('https://jsonplaceholder.typicode.com/users')
-  .then(response => response.json())
-  .then(data => dispatch({ type: REQUEST_USERS_SUCCESS, payload: data }))
-  .catch(error => dispatch({ type: REQUEST_USERS_FAILED, payload: error }))
+export const requestUsers = (apiURL = "https://jsonplaceholder.typicode.com/users") => async (dispatch: Dispatch) => {
+  try {
+    dispatch({ type: REQUEST_USERS_PENDING })
+    const data = await apiCall(apiURL)
+    dispatch({ type: REQUEST_USERS_SUCCESS, payload: data })
+  } catch (error) {
+    dispatch({ type: REQUEST_USERS_FAILED, payload: error })
+  }
 }
