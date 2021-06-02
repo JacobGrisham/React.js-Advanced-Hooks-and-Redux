@@ -2,7 +2,7 @@
 // Had to debug standard import statement. See https://github.com/emotion-js/emotion/issues/2041#issuecomment-708263981
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import '../assets/styles/App.css';
+import '../assets/styles/Main.css';
 import React, { PureComponent, Fragment } from 'react';
 
 const title = css `
