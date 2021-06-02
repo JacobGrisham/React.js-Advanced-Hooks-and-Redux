@@ -44,10 +44,6 @@
       "react-app/jest"
     ]
   },
-  "jest": {
-    "coverageDirectory": "./src/tests/coverage/",
-    "collectCoverage": true
-  },
   "browserslist": {
     "production": [
       ">0.2%",
