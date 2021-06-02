@@ -8,7 +8,7 @@ jobs:
       - image: circleci/node:10-browsers
     steps:
       - codecov/upload:
-          file: './src/tests/coverage/clover.xml'
+          file: 'src/tests/coverage/clover.xml'
           token: $CODECOV_TOKEN
 workflows:
   node-tests:
