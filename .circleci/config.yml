@@ -2,7 +2,16 @@ version: 2.1
 orbs:
   node: circleci/node@3.0.0
   codecov: codecov/codecov@1.2.3
+jobs:
+  upload-test-coverage:
+    docker:
+      - image: circleci/node:10-browsers
+    steps:
+      - codecov/upload:
+          file: './src/tests/coverage/clover.xml'
+          token: $CODECOV_TOKEN
 workflows:
   node-tests:
     jobs:
       - node/test
+      - upload-test-coverage
