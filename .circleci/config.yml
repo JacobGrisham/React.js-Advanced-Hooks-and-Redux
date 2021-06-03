@@ -22,6 +22,6 @@ workflows:
     jobs:
       - node/test
       - generate-test-coverage-report
-      - upload-test-coverage
-        requires:
-          - generate-test-coverage-report
+      - upload-test-coverage:
+          requires:
+            - generate-test-coverage-report
