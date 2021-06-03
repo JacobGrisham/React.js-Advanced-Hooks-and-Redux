@@ -1,4 +1,4 @@
-# [Robofriends App: React.js Advanced Hooks and Redux](https://jacobgrisham.github.io/React.js-Advanced-Hooks-and-Redux/)
+# [Robofriends App: Typescript, Tests, Redux, React.js Hooks, Performance, and PWA](https://jacobgrisham.github.io/React.js-Advanced-Hooks-and-Redux/)
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://jacobgrisham.github.io/React.js-Advanced-Hooks-and-Redux/)
 [![CircleCI](https://img.shields.io/circleci/build/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)](https://app.circleci.com/pipelines/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)
 [![codecov](https://codecov.io/gh/JacobGrisham/React.js-Advanced-Hooks-and-Redux/branch/master/graph/badge.svg?token=J3C73Q9QW8)](https://codecov.io/gh/JacobGrisham/React.js-Advanced-Hooks-and-Redux)
