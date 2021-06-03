@@ -1,11 +1,18 @@
+defaults: &defaults
+  docker:
+    - image: circleci/node:8.11
+  working_directory: ~/repo
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
   codecov: codecov/codecov@1.2.3
 jobs:
+  generate-test-coverage-report:
+    <<: *defaults
+    steps:
+      - run: npm test -- --coverage
   upload-test-coverage:
-    docker:
-      - image: circleci/node:10-browsers
+    <<: *defaults
     steps:
       - codecov/upload:
           file: coverage/*.xml
@@ -14,4 +21,7 @@ workflows:
   node-tests:
     jobs:
       - node/test
+      - generate-test-coverage-report
       - upload-test-coverage
+        requires:
+          - generate-test-coverage-report
