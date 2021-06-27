@@ -1,0 +1,2 @@
+# add .gitattributes file to more accurately display language stats fo github. the language stat for this repo was 74.1% html, but that's not accurate because there are only 43 lines of HTML code
+*.html linguist-generated
