@@ -9,33 +9,39 @@
 ![Demo](img/demo.gif)
 
 ## 💡 Lessons Learned
-- ES6 `map`
-- Javascript Deconstructering
-- Higher order functions
-- React `Fragment`
-- React `ErrorBoundary`
-- React component nesting
-- React folder organization
-- Smart component (manages state) vs basic component
-- Class stateful component vs functional stateful component
-- React Hooks `useState` and `useEffect`
-- Redux `connect` vs `useSelector` and `useDispatch`
-- Redux middleware such as async actions using `redux-thunk` and logging using `redux-logger`
-- Redux folder organization
-- Website performance optimization using [WebPageTest](https://www.webpagetest.org/)
-- React performance optimization using `React.memo`, `PureComponent`, and `shouldComponentUpdate`
-- React debugging and performance optimization using Chrome Dev Tools Performace tab and React Developer Tools
-- Route-based code splitting with `React.lazy()`
-- Component-based code splitting with `react-loadable`
-- [Emotion](https://emotion.sh/docs/introduction) for styling components
+- [Javascript](https://www.javascript.com/)
+  - ES6 `map`
+  - Javascript Destructering
+  - Higher order functions
+- [React](https://reactjs.org/)
+  - React `Fragment`
+  - React `ErrorBoundary`
+  - React component nesting
+  - React folder organization
+  - Smart component (manages state) vs basic component
+  - Class stateful component vs functional stateful component
+  - React Hooks `useState` and `useEffect`
+- [Redux](https://redux.js.org/)
+  - Redux `connect` vs `useSelector` and `useDispatch`
+  - Redux middleware such as async actions using `redux-thunk` and logging using `redux-logger`
+  - Redux folder organization
+- Performance Optimization
+  - Website performance optimization using [WebPageTest](https://www.webpagetest.org/)
+  - React performance optimization using `React.memo`, `PureComponent`, and `shouldComponentUpdate`
+  - React debugging and performance optimization using [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) [Performace tab](https://developer.chrome.com/docs/devtools/evaluate-performance/) and [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+  - Route-based code splitting with `React.lazy()`
+  - Component-based code splitting with `react-loadable`
+- [Emotion](https://emotion.sh/docs/introduction)
 - Progressive Web Applications (PWA)
-- Dynamic vs Static Typing and Weakly vs Strongly Typed
-- Typescript commands `tsc name_of_file.ts` to run the Typescript compiler on the specified file, `tsc --init` to generate tsconfig.json file, and `tsc name_of_file.ts --watch` to enable hot-reloading for the specified file
-- Typescript types: boolean, number, string, array, objects, null, undefined, tuple, enum, any, void, never, interface, function, classes, and union
-- Refactoring applications with Typescript and using [DefinitelyTyped](https://definitelytyped.org/) to install the correct dependencies
-- Refactoring Typescript into a Progressive Web Application that uses React and Redux
-- Unit Tests, Integration Tests, Automation Tests
-- Testing behavior vs. implementation details
+- [Typescript](https://www.typescriptlang.org/)
+  - Dynamic vs Static Typing and Weakly vs Strongly Typed
+  - Typescript commands `tsc name_of_file.ts` to run the Typescript compiler on the specified file, `tsc --init` to generate tsconfig.json file, and `tsc name_of_file.ts --watch` to enable hot-reloading for the specified file
+  - Typescript types: boolean, number, string, array, objects, null, undefined, tuple, enum, any, void, never, interface, function, classes, and union
+  - Refactoring applications with Typescript and using [DefinitelyTyped](https://definitelytyped.org/) to install the correct dependencies
+  - Refactoring Typescript into a Progressive Web Application that uses React and Redux
+- Testing
+  - Unit Tests, Integration Tests, Automation Tests
+  - Testing behavior vs. implementation details
 
 ## 🤔 Senior Software Engineer Considerations
 ### Why Use React, What Came Before It?
