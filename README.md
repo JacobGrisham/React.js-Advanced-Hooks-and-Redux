@@ -1,9 +1,13 @@
-# [Robofriends App: Typescript, Tests, Redux, React.js Hooks, Performance, and PWA](https://jacobgrisham.github.io/React.js-Advanced-Hooks-and-Redux/)
-[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://jacobgrisham.github.io/React.js-Advanced-Hooks-and-Redux/)
-[![CircleCI](https://img.shields.io/circleci/build/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)](https://app.circleci.com/pipelines/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)
-[![codecov](https://codecov.io/gh/JacobGrisham/React.js-Advanced-Hooks-and-Redux/branch/master/graph/badge.svg?token=J3C73Q9QW8)](https://codecov.io/gh/JacobGrisham/React.js-Advanced-Hooks-and-Redux)
-![David](https://img.shields.io/david/jacobgrisham/React.js-Advanced-Hooks-and-Redux)
-[![gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.dev)
+<div align="center">
+  <img width="200" src="public/logo512.png" alt="Robofriends logo">
+  
+  # [Robofriends App: Typescript, Tests, Redux, React.js Hooks, Performance, and PWA](https://jacobgrisham.github.io/React.js-Advanced-Hooks-and-Redux/)
+  [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://jacobgrisham.github.io/React.js-Advanced-Hooks-and-Redux/)
+  [![CircleCI](https://img.shields.io/circleci/build/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)](https://app.circleci.com/pipelines/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)
+  [![codecov](https://codecov.io/gh/JacobGrisham/React.js-Advanced-Hooks-and-Redux/branch/master/graph/badge.svg?token=J3C73Q9QW8)](https://codecov.io/gh/JacobGrisham/React.js-Advanced-Hooks-and-Redux)
+  ![David](https://img.shields.io/david/jacobgrisham/React.js-Advanced-Hooks-and-Redux)
+  [![gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.dev)
+</div>
 ## Coding project from the Udemy Course [The Complete Junior to Senior Web Developer Roadmap](https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/)
 
 ![Demo](img/demo.gif)
