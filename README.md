@@ -4,6 +4,7 @@
   # [Robofriends App: Typescript, Tests, Redux, React.js Hooks, Performance, and PWA](https://jacobgrisham.github.io/React.js-Advanced-Hooks-and-Redux/)
   ![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=brightgreen&up_message=online&url=https%3A%2F%2Fjacobgrisham.github.io%2FReact.js-Advanced-Hooks-and-Redux%2F)
   [![CircleCI](https://img.shields.io/circleci/build/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)](https://app.circleci.com/pipelines/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)
+  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1369c434acf64d29ad3f06addf3e5d4a)](https://www.codacy.com/gh/JacobGrisham/React.js-Advanced-Hooks-and-Redux/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JacobGrisham/React.js-Advanced-Hooks-and-Redux&amp;utm_campaign=Badge_Grade)
   [![codecov](https://codecov.io/gh/JacobGrisham/React.js-Advanced-Hooks-and-Redux/branch/master/graph/badge.svg?token=J3C73Q9QW8)](https://codecov.io/gh/JacobGrisham/React.js-Advanced-Hooks-and-Redux)
   ![David](https://img.shields.io/david/jacobgrisham/React.js-Advanced-Hooks-and-Redux)
   [![gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.dev)
