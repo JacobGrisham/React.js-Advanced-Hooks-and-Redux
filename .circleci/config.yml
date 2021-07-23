@@ -13,6 +13,7 @@ jobs:
   generate-test-coverage-report:
     <<: *defaults
     steps:
+      - checkout
       - run: npm test -- --coverage
   upload-test-coverage:
     <<: *defaults
