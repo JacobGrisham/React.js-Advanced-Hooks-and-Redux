@@ -1,41 +1,53 @@
-# [Robofriends App: Typescript, Tests, Redux, React.js Hooks, Performance, and PWA](https://jacobgrisham.github.io/React.js-Advanced-Hooks-and-Redux/)
-[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://jacobgrisham.github.io/React.js-Advanced-Hooks-and-Redux/)
-[![CircleCI](https://img.shields.io/circleci/build/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)](https://app.circleci.com/pipelines/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)
-[![codecov](https://codecov.io/gh/JacobGrisham/React.js-Advanced-Hooks-and-Redux/branch/master/graph/badge.svg?token=J3C73Q9QW8)](https://codecov.io/gh/JacobGrisham/React.js-Advanced-Hooks-and-Redux)
-![David](https://img.shields.io/david/jacobgrisham/React.js-Advanced-Hooks-and-Redux)
-[![gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.dev)
+<div align="center">
+  <img width="200" src="public/logo512.png" alt="Robofriends logo">
+  
+  # [Robofriends App: Typescript, Tests, Redux, React.js Hooks, Performance, and PWA](https://jacobgrisham.github.io/React.js-Advanced-Hooks-and-Redux/)
+  ![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=brightgreen&up_message=online&url=https%3A%2F%2Fjacobgrisham.github.io%2FReact.js-Advanced-Hooks-and-Redux%2F)
+  [![CircleCI](https://img.shields.io/circleci/build/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)](https://app.circleci.com/pipelines/github/JacobGrisham/React.js-Advanced-Hooks-and-Redux)
+  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1369c434acf64d29ad3f06addf3e5d4a)](https://www.codacy.com/gh/JacobGrisham/React.js-Advanced-Hooks-and-Redux/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JacobGrisham/React.js-Advanced-Hooks-and-Redux&amp;utm_campaign=Badge_Grade)
+  [![codecov](https://codecov.io/gh/JacobGrisham/React.js-Advanced-Hooks-and-Redux/branch/master/graph/badge.svg?token=J3C73Q9QW8)](https://codecov.io/gh/JacobGrisham/React.js-Advanced-Hooks-and-Redux)
+  ![David](https://img.shields.io/david/jacobgrisham/React.js-Advanced-Hooks-and-Redux)
+  [![gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.dev)
+</div>
+
 ## Coding project from the Udemy Course [The Complete Junior to Senior Web Developer Roadmap](https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/)
 
 ![Demo](img/demo.gif)
 
 ## 💡 Lessons Learned
-- ES6 `map`
-- Javascript Deconstructering
-- Higher order functions
-- React `Fragment`
-- React `ErrorBoundary`
-- React component nesting
-- React folder organization
-- Smart component (manages state) vs basic component
-- Class stateful component vs functional stateful component
-- React Hooks `useState` and `useEffect`
-- Redux `connect` vs `useSelector` and `useDispatch`
-- Redux middleware such as async actions using `redux-thunk` and logging using `redux-logger`
-- Redux folder organization
-- Website performance optimization using [WebPageTest](https://www.webpagetest.org/)
-- React performance optimization using `React.memo`, `PureComponent`, and `shouldComponentUpdate`
-- React debugging and performance optimization using Chrome Dev Tools Performace tab and React Developer Tools
-- Route-based code splitting with `React.lazy()`
-- Component-based code splitting with `react-loadable`
-- [Emotion](https://emotion.sh/docs/introduction) for styling components
+- [Javascript](https://www.javascript.com/)
+  - ES6 `map`
+  - Javascript Destructering
+  - Higher order functions
+- [React](https://reactjs.org/)
+  - React `Fragment`
+  - React `ErrorBoundary`
+  - React component nesting
+  - React folder organization
+  - Smart component (manages state) vs basic component
+  - Class stateful component vs functional stateful component
+  - React Hooks `useState` and `useEffect`
+- [Redux](https://redux.js.org/)
+  - Redux `connect` vs `useSelector` and `useDispatch`
+  - Redux middleware such as async actions using `redux-thunk` and logging using `redux-logger`
+  - Redux folder organization
+- Performance Optimization
+  - Website performance optimization using [WebPageTest](https://www.webpagetest.org/)
+  - React performance optimization using `React.memo`, `PureComponent`, and `shouldComponentUpdate`
+  - React debugging and performance optimization using [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) [Performace tab](https://developer.chrome.com/docs/devtools/evaluate-performance/) and [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+  - Route-based code splitting with `React.lazy()`
+  - Component-based code splitting with `react-loadable`
+- [Emotion](https://emotion.sh/docs/introduction)
 - Progressive Web Applications (PWA)
-- Dynamic vs Static Typing and Weakly vs Strongly Typed
-- Typescript commands `tsc name_of_file.ts` to run the Typescript compiler on the specified file, `tsc --init` to generate tsconfig.json file, and `tsc name_of_file.ts --watch` to enable hot-reloading for the specified file
-- Typescript types: boolean, number, string, array, objects, null, undefined, tuple, enum, any, void, never, interface, function, classes, and union
-- Refactoring applications with Typescript and using [DefinitelyTyped](https://definitelytyped.org/) to install the correct dependencies
-- Refactoring Typescript into a Progressive Web Application that uses React and Redux
-- Unit Tests, Integration Tests, Automation Tests
-- Testing behavior vs. implementation details
+- [Typescript](https://www.typescriptlang.org/)
+  - Dynamic vs Static Typing and Weakly vs Strongly Typed
+  - Typescript commands `tsc name_of_file.ts` to run the Typescript compiler on the specified file, `tsc --init` to generate tsconfig.json file, and `tsc name_of_file.ts --watch` to enable hot-reloading for the specified file
+  - Typescript types: boolean, number, string, array, objects, null, undefined, tuple, enum, any, void, never, interface, function, classes, and union
+  - Refactoring applications with Typescript and using [DefinitelyTyped](https://definitelytyped.org/) to install the correct dependencies
+  - Refactoring Typescript into a Progressive Web Application that uses React and Redux
+- Testing
+  - Unit Tests, Integration Tests, Automation Tests
+  - Testing behavior vs. implementation details
 
 ## 🤔 Senior Software Engineer Considerations
 ### Why Use React, What Came Before It?
