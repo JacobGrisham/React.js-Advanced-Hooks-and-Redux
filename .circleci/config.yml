@@ -9,7 +9,7 @@ orbs:
   codecov: codecov/codecov@1.2.3
 
 jobs:
-  generate-test-coverage-report:
+  test-coverage-report:
     <<: *defaults
     steps:
       - checkout
@@ -25,9 +25,6 @@ jobs:
           paths:
             - /home/circleci/repo/.npm # this is where the npm cache is stored when we use npm ci
       - run: npm run coverage
-  upload-test-coverage:
-    <<: *defaults
-    steps:
       - codecov/upload:
           file: /home/circleci/repo/coverage/*.xml
           token: $CODECOV_TOKEN
@@ -35,7 +32,4 @@ jobs:
 workflows:
   node-tests:
     jobs:
-      - generate-test-coverage-report
-      - upload-test-coverage:
-          requires:
-            - generate-test-coverage-report
+      - test-coverage-report
