@@ -36,6 +36,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -55,6 +56,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "collectCoverageFrom": ["<rootDir>/src/**/*.{js,jsx,tsx}"],
+    "coveragePathIgnorePatterns": ["index.tsx", "reportWebVitals.tsx", "service-worker.tsx", "serviceWorkerRegistration.tsx", "<rootDir>/src/tests"]
   },
   "devDependencies": {
     "@emotion/babel-plugin": "^11.3.0",
