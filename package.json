@@ -57,6 +57,10 @@
       "last 1 safari version"
     ]
   },
+  "jest": {
+    "collectCoverageFrom": ["<rootDir>/src/**/*.{js,jsx,tsx}"],
+    "coveragePathIgnorePatterns": ["index.tsx", "reportWebVitals.tsx", "service-worker.tsx", "serviceWorkerRegistration.tsx", "<rootDir>/src/tests"]
+  },
   "devDependencies": {
     "@emotion/babel-plugin": "^11.3.0",
     "@testing-library/jest-dom": "^5.11.10",
